@@ -307,22 +307,24 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
-#project_tagline {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
-}
-
-#downloads {
+#links {
   position: absolute;
   width: 210px;
   z-index: 10;
   bottom: -40px;
   right: 0;
   height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
+}
+
+
+.pb_logo_link {
+  display: block;
+  float: right;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/PB_logo.png) no-repeat;
 }
 
 .zip_download_link {
@@ -344,6 +346,10 @@ Full-Width Styles
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom right;
   margin-left: 10px;
+}
+
+.pb_logo_link:hover {
+  background: url(../images/PB_logo_blue.png) no-repeat;
 }
 
 .zip_download_link:hover {
