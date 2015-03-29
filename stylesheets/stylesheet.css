@@ -316,33 +316,18 @@ Full-Width Styles
   height: 70px;
 }
 
-
-.pb_logo_link {
+.home_link {
   display: block;
   float: right;
-  width: 150px;
-  height:70px;
+  width: 32px;
+  height:32px;
   text-indent: -5000px;
   overflow: hidden;
-  background: url(../images/PB_logo.png) no-repeat;
+  background: url(../images/home.png) no-repeat bottom left;
 }
 
-.zip_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left;
-}
-
-.pb_logo_link:hover {
-  background: url(../images/PB_logo_blue.png) no-repeat;
-}
-
-.zip_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top left;
+.home_link:hover {
+  background: url(../images/home_blue.png) no-repeat top left;
 }
 
 
