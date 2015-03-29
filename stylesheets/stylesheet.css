@@ -323,11 +323,25 @@ Full-Width Styles
   height:32px;
   text-indent: -5000px;
   overflow: hidden;
-  background: url(../images/home.png) no-repeat bottom left;
+  background: url(../images/home.png) no-repeat;
+}
+
+.mail_link {
+  display: block;
+  float: right;
+  width: 32px;
+  height:32px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/mail.png) no-repeat;
 }
 
 .home_link:hover {
   background: url(../images/home_blue.png) no-repeat top left;
+}
+
+.mail_link:hover {
+  background: url(../images/mail_blue.png) no-repeat;
 }
 
 
