@@ -361,6 +361,16 @@ Full-Width Styles
   background: url(../images/file.png) no-repeat;
 }
 
+.printer_link {
+  display: block;
+  float: right;
+  width: 32px;
+  height:32px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/printer.png) no-repeat;
+}
+
 .home_link:hover {
   background: url(../images/home_blue.png) no-repeat top left;
 }
@@ -371,6 +381,10 @@ Full-Width Styles
 
 .file_link:hover {
   background: url(../images/file_blue.png) no-repeat;
+}
+
+.printer_link:hover {
+  background: url(../images/printer_blue.png) no-repeat;
 }
 
 
