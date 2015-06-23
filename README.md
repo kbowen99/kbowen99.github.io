@@ -1,3 +1,5 @@
 # Kurt's Site
 
-This Webpage was created as a test for the github pages tool and possibly as my own personal website
+This Github Directory is being used to host my personal webpage.
+
+This started as a proof of concept, but works very well.
