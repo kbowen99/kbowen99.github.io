@@ -20,7 +20,7 @@
    		     // change the location of the window object
    		     var ans = prompt(probs);
    		     if (ans == answ[randomNumber]){
-   		        confirm('You're Wrong, answer is ' + answ[randomNumber];
+   		        confirm(answ[randomNumber]);
    		     } else {
    		        confirm('You're Right');
    		     }
