@@ -46,9 +46,14 @@
           var Magical = setInterval(function(){countDownNow()},1000)
 
           function countDownNow(){
+            //Instance Variables
+            var hourUntil = 18;
+            var countString = 'ACT Prep';
+            var finishString = 'finally over';
+            //Working code
             var now = new Date();
             var nowInSeconds = (now.getHours() * 60 * 60) + (now.getMinutes() * 60) + (now.getSeconds());
-            var countdownSeconds = 18 * 60 * 60;
+            var countdownSeconds = (hourUntil * 60 * 60);
 
             var RHours = 0;
             var RMinutes = 0;
@@ -58,14 +63,14 @@
 
             if (nowInSeconds < countdownSeconds) {
               //console.log((countdownSeconds - nowInSeconds) + ' Seconds Remaining');
-              RHours = 11 - now.getHours();
+              RHours = (hourUntil - 1) - now.getHours();
               RMinutes = 59 - now.getMinutes();
               RSeconds = 59 - now.getSeconds();
-              PrintedNicely = (RHours + ' Hours, ' + RMinutes + ' Minutes, ' + RSeconds + ' Seconds Until Class is out');
+              PrintedNicely = (RHours + ' Hours, ' + RMinutes + ' Minutes, ' + RSeconds + ' Seconds until ' + countString + ' is ' + finishString);
               console.log(PrintedNicely);
             }
             if (nowInSeconds > countdownSeconds) {
-              PrintedNicely = 'What are you doing here? Schools out';
+              PrintedNicely = 'What are you doing here? ' + countString + ' is ' + finishString;
             }
             document.getElementById('count').innerHTML = PrintedNicely;
           }
