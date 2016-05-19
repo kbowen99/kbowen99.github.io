@@ -38,41 +38,19 @@
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Countdown Timer</h3>
 
           <br></br>
-          <center><h3 id="count"></h3></center>
+          <iframe id="ifrm" src="http://kurtisbowen.me/"></iframe>
           <br></br>
           <br></br>
 
           <script type="text/javascript">
-          var Magical = setInterval(function(){countDownNow()},1000)
-
+          var link = prompt("Website to Reload");
+          var timeout = prompt("Delay (MS)");
+          var Magical = setInterval(function(){countDownNow()},timeout)
+          
+          var el = document.getElementById('ifrm');
+          
           function countDownNow(){
-            //Instance Variables
-            var hourUntil = 18;
-            var countString = 'ACT Prep';
-            var finishString = 'finally over';
-            //Working code
-            var now = new Date();
-            var nowInSeconds = (now.getHours() * 60 * 60) + (now.getMinutes() * 60) + (now.getSeconds());
-            var countdownSeconds = (hourUntil * 60 * 60);
-
-            var RHours = 0;
-            var RMinutes = 0;
-            var RSeconds = 0;
-
-            var PrintedNicely = "";
-
-            if (nowInSeconds < countdownSeconds) {
-              //console.log((countdownSeconds - nowInSeconds) + ' Seconds Remaining');
-              RHours = (hourUntil - 1) - now.getHours();
-              RMinutes = 59 - now.getMinutes();
-              RSeconds = 59 - now.getSeconds();
-              PrintedNicely = (RHours + ' Hours, ' + RMinutes + ' Minutes, ' + RSeconds + ' Seconds until ' + countString + ' is ' + finishString);
-              console.log(PrintedNicely);
-            }
-            if (nowInSeconds > countdownSeconds) {
-              PrintedNicely = 'What are you doing here? ' + countString + ' is ' + finishString;
-            }
-            document.getElementById('count').innerHTML = PrintedNicely;
+            el.src = link;
           }
           </script>
 
