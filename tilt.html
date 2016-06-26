@@ -35,7 +35,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Countdown Timer</h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tilt Test</h3>
 
           <br></br>
           <center><h3 id="count"></h3></center>
@@ -43,12 +43,12 @@
           <br></br>
 
           <script type="text/javascript">
-          var Magical = setInterval(function(){countDownNow()},1000)
+          var Magical = setInterval(function(){countDownNow()},100)
 		  var PrintedNicely = "";
 
           function countDownNow(){
-		  
-			if (window.DeviceOrientationEvent) {
+			//window.DeviceOrientationEvent
+			if (false) {
 				window.addEventListener("deviceorientation", function () {
 				tilt([event.beta, event.gamma]);
 				}, true);
