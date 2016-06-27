@@ -91,23 +91,23 @@
 			
 				//X Heading
 				if (Math.abs(x - centerX) < headTol){
-					PrintedHeading = " XCENTER";
+					PrintedHeading = "XCENTER";
 				}
 				if (x < (centerX - headTol)){
-					PrintedHeading = " XLOW";
+					PrintedHeading = "XLOW";
 				}
 				if (x > (centerX + headTol)){
-					PrintedHeading = " XHIGH";
+					PrintedHeading = "XHIGH";
 				}
 				//Y Heading
 				if (Math.abs(y - centerY) < headTol){
-					PrintedHeading = PrintedHeading + "YCENTER";
+					PrintedHeading = PrintedHeading + " YCENTER";
 				}
 				if (y < (centerY - headTol)){
-					PrintedHeading = PrintedHeading + "YLOW";
+					PrintedHeading = PrintedHeading + " YLOW";
 				}
 				if (y > (centerY + headTol)){
-					PrintedHeading = PrintedHeading + "YHIGH";
+					PrintedHeading = PrintedHeading + " YHIGH";
 				}
 
 			}
