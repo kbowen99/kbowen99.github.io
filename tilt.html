@@ -88,26 +88,28 @@
 			
 			//Terrible Heading Code
 			if (centered){
-				//Y Heading
-				if (Math.abs(y - centerY) < headTol){
-					PrintedHeading = "YCENTER";
-				}
-				if (y < (centerY - headTol)){
-					PrintedHeading = "YLOW";
-				}
-				if (y > (centerY + headTol)){
-					PrintedHeading = "YHIGH";
-				}
+			
 				//X Heading
 				if (Math.abs(x - centerX) < headTol){
-					PrintedHeading = PrintedHeading + " XCENTER";
+					PrintedHeading = " XCENTER";
 				}
 				if (x < (centerX - headTol)){
-					PrintedHeading = PrintedHeading + " XLOW";
+					PrintedHeading = " XLOW";
 				}
 				if (x > (centerX + headTol)){
-					PrintedHeading = PrintedHeading + " XHIGH";
+					PrintedHeading = " XHIGH";
 				}
+				//Y Heading
+				if (Math.abs(y - centerY) < headTol){
+					PrintedHeading = PrintedHeading + "YCENTER";
+				}
+				if (y < (centerY - headTol)){
+					PrintedHeading = PrintedHeading + "YLOW";
+				}
+				if (y > (centerY + headTol)){
+					PrintedHeading = PrintedHeading + "YHIGH";
+				}
+
 			}
 		  }
 		  
