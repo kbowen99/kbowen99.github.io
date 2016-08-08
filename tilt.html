@@ -1,0 +1,84 @@
+---
+layout: old
+---
+<h3>Tilt Test</h3>
+<br></br>
+<center><h3 id="pos"></h3></center>
+<center><h3 id="heading"></h3></center>
+<br></br>
+<center><button onclick="centerH();">Click Here To Center</button></center>
+<br></br>
+
+<script type="text/javascript">
+  var Magical = setInterval(function(){countDownNow()},100)
+	var PrintedNicely = "";
+	var PrintedHeading = "Uncentered";
+	var centering = false;
+	var centered = false;
+	var centerX = 0.0;
+	var centerY = 0.0;
+	var headTol = 15;
+
+	confirm("For Best Experience, Lock the Orientation of your device in Portrait Mode and hold your phone level or at a slight angle");
+
+  function countDownNow(){
+	   //window.DeviceOrientationEvent
+			if (window.DeviceOrientationEvent) {
+				window.addEventListener("deviceorientation", function () {
+				tilt(event.beta, event.gamma);
+				}, true);
+			} else if (window.DeviceMotionEvent) {
+				window.addEventListener('devicemotion', function () {
+				tilt(event.acceleration.x * 2, event.acceleration.y * 2);
+				}, true);
+			} else {
+				window.addEventListener("MozOrientation", function () {
+				tilt(orientation.x * 50, orientation.y * 50);
+				}, true);
+			}
+            document.getElementById('pos').innerHTML = PrintedNicely;
+			document.getElementById('heading').innerHTML = PrintedHeading;
+          }
+
+		  function tilt(x,y){
+			PrintedNicely = "X:" + x + " Y:" + y;
+
+			if (centering){
+				centering = false;
+				centerX = x;
+				centerY = y;
+				centered = true;
+				PrintedHeading = "Centered!";
+			}
+
+			//Terrible Heading Code
+			if (centered){
+
+				//X Heading
+				if (Math.abs(x - centerX) < headTol){
+					PrintedHeading = "XCENTER";
+				}
+				if (x < (centerX - headTol)){
+					PrintedHeading = "XLOW";
+				}
+				if (x > (centerX + headTol)){
+					PrintedHeading = "XHIGH";
+				}
+				//Y Heading
+				if (Math.abs(y - centerY) < headTol){
+					PrintedHeading = PrintedHeading + " YCENTER";
+				}
+				if (y < (centerY - headTol)){
+					PrintedHeading = PrintedHeading + " YLOW";
+				}
+				if (y > (centerY + headTol)){
+					PrintedHeading = PrintedHeading + " YHIGH";
+				}
+
+			}
+		  }
+
+		  function centerH(){
+			centering = true;
+		  }
+  </script>
