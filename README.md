@@ -1,5 +1,8 @@
 # Kurt's Site
+Welcome to my website github page! It's currently a mess, and probably will stay that way. This website uses Jekyll, making much cleaner files possible
 
-This Github Directory is being used to host my personal webpage.
-
-This started as a proof of concept, but works very well.
+##Made Possible By
+  - [link](https://github.com/ "Github")
+  - [link](https://pages.github.com/ "Github Pages")
+  - [link](https://jekyllrb.com/ "Jekyll")
+  - [link](https://github.com/barryclark/jekyll-now "Jekyll-Now")
