@@ -15,28 +15,31 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+      <header class="inner">
+        <a id="banner" href="http://github.com/kbowen99/mygithubpage">Hosted on GitHub!</a>
+        <h1 id="project_title">Kurt&#39;s Site</h1>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+          <section id="links">
+            <a class="printer_link" href=./printr.html>Printr</a>
+            <a class="file_link" href="http://kurtisbowen.me/files">Files</a>
+            <a class="mail_link" href="mailto:me%20(at)%20kurtisbowen%20.%20me?Subject=Something%20Broke">Mail</a>
+            <a class="home_link" href="http://kurtisbowen.me/">Home</a>
+          </section>
+      </header>
+  </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      {{ content}}
+
+      <!-- FOOTER  -->
+      <div id="footer_wrap" class="outer">
+        <footer class="inner">
+          <p>Generated with <a href="http://pages.github.com">GitHub Pages</a></p>
+        </footer>
       </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
 
     <div class="wrapper-footer">
       <div class="container">
