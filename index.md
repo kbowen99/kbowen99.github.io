@@ -1,7 +1,7 @@
 ---
 layout: old
-title: About
-permalink: /about/
+title: index
+permalink: /index/
 ---
 # Under Construction
 
