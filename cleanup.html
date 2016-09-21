@@ -29,7 +29,7 @@ layout: old
     min = d.getMinutes();
     sec = d.getSeconds();
     //console.log(min);
-    var timeShown = "Last Updated: " + hour + ":" + min + ":" + sec;
+    var timeShown = "Last Updated: " + hour + ":" + min + ":" + sec + " ";
     if ((hour == 7 && min > 25) || (hour == 8 && min < 12)){
       timeShown = timeShown + "(1st Period)";
     }
@@ -54,7 +54,10 @@ layout: old
     if ((hour == 13 && min > 48) || (hour == 14 && min < 35)){
       timeShown = timeShown + "(11th Period)";
     }
-    tme.innerHTML = timeShown + "(What Are You Doing Here?)";
+    if ((hour == 14 && min > 35) || (hour >= 14) || (hour < 7) || (hour == 7 && min < 25)){
+      timeShown =  timeShown + "(What Are You Doing Here?)";
+    }
+    tme.innerHTML = timeShown;
     //first hour (ends @8:12)
     if (hour == 8 && min == (12-timeOffset) && !playing){
       playing = true;
