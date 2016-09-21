@@ -120,7 +120,7 @@ layout: old
       });
     }
     //11th hour (14:35)
-    if (hour == 14 && min == (35-timeOffset) && !playing){
+    if (((hour == 14 && min == (35-timeOffset)) || hour >= 14) && !playing ){
       playing = true;
       iframe.src = tigerURL;
       sleep(1000*60*60*17).then(() => {
