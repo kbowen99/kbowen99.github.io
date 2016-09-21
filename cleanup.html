@@ -1,0 +1,109 @@
+---
+layout: old
+---
+<center><h3>Welcome To Hettel's Cleanup Reminder</h3></center>
+<center><iframe id="ifrm" src="http://kurtisbowen.me/" width="560" height="315"></iframe></center>
+<script type="text/javascript">
+  var timer = setInterval(function(){countDownNow()},5000)
+  var iframe = document.getElementById('ifrm');
+
+  var normalURL = "./images/barney.jpg";
+  var cleaningURL = "https://www.youtube-nocookie.com/embed/whrNJH8S-Ys?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
+
+  var d = new Date();
+  var hour = d.getHours();
+  var min = d.getMinutes();
+  var sec = d.getSeconds();
+
+  var timeOffset = 1; //How Early (before Period Ends) to play the song (4 min max)
+  var secsToBurn = 60 * timeOffset * 1000;
+
+  var playing = false;
+
+  function countDownNow(){
+    d = new Date();
+    hour = d.getHours();
+    min = d.getMinutes();
+    sec = d.getSeconds();
+    console.log(min);
+    //first hour (ends @8:12)
+    if (hour == 8 && min == (12-timeOffset) && !playing){
+      playing = true;
+      iframe.src = cleaningURL;
+      sleep(1000*60*2).then(() => {
+        iframe.src = normalURL;
+        playing = false;
+      });
+    }
+    //second hour (9:04)
+    if (hour == 9 && min == (4-timeOffset) && !playing){
+      playing = true;
+      iframe.src = cleaningURL;
+      sleep(1000*60*2).then(() => {
+        iframe.src = normalURL;
+        playing = false;
+      });
+    }
+    //third hour (9:56)
+    if (hour == 9 && min == (56-timeOffset) && !playing){
+      playing = true;
+      iframe.src = cleaningURL;
+      sleep(1000*60*2).then(() => {
+        iframe.src = normalURL;
+        playing = false;
+      });
+    }
+    //fourth hour (10:30)
+    if (hour == 10 && min == (30-timeOffset) && !playing){
+      playing = true;
+      iframe.src = cleaningURL;
+      sleep(1000*60*2).then(() => {
+        iframe.src = normalURL;
+        playing = false;
+      });
+    }
+    //sixth hour (11:27)
+    if (hour == 11 && min == (27-timeOffset) && !playing){
+      playing = true;
+      iframe.src = cleaningURL;
+      sleep(1000*60*2).then(() => {
+        iframe.src = normalURL;
+        playing = false;
+      });
+    }
+    //nineth hour (12:51)
+    if (hour == 12 && min == (51-timeOffset) && !playing){
+      playing = true;
+      iframe.src = cleaningURL;
+      sleep(1000*60*2).then(() => {
+        iframe.src = normalURL;
+        playing = false;
+      });
+    }
+    //tenth hour (13:43)
+    if (hour == 13 && min == (43-timeOffset) && !playing){
+      playing = true;
+      iframe.src = cleaningURL;
+      sleep(1000*60*2).then(() => {
+        iframe.src = normalURL;
+        playing = false;
+      });
+    }
+    //11th hour (14:35)
+    if (hour == 14 && min == (35-timeOffset) && !playing){
+      playing = true;
+      iframe.src = cleaningURL;
+      sleep(1000*60*2).then(() => {
+        iframe.src = normalURL;
+        playing = false;
+      });
+    }
+  }
+
+    //iframe.src = normalURL;
+  }
+  function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
+  }
+</script>
