@@ -28,33 +28,11 @@ layout: old
     min = d.getMinutes();
     sec = d.getSeconds();
     //console.log(min);
-    var timeShown = "Last Updated: " + hour + ":" + min + ":" + sec + " ";
-    if ((hour == 7 && min > 25) || (hour == 8 && min < 12)){
-      timeShown = timeShown + "(1st Period)";
-    }
-    if ((hour == 8 && min > 17) || (hour == 9 && min < 4)){
-      timeShown = timeShown + "(2nd Period)";
-    }
-    if (hour == 9 && min > 9 && min < 56){
-      timeShown = timeShown + "(3rd Period)";
-    }
-    if ((hour == 10 && min > 1) || (hour == 10 && min < 30)){
-      timeShown = timeShown + "(Access)";
-    }
-    if ((hour == 10 && min > 35) || (hour == 11 && min < 27)){
-      timeShown = timeShown + "(5th/6th Period)";
-    }
-    if (hour == 12 && min < 51){
-      timeShown = timeShown + "(8th/9th Period)";
-    }
-    if ((hour == 12 && min > 56) || (hour == 13 && min < 43)){
-      timeShown = timeShown + "(10th Period)";
-    }
-    if ((hour == 13 && min > 48) || (hour == 14 && min < 35)){
-      timeShown = timeShown + "(11th Period)";
-    }
-    if ((hour == 14 && min > 35) || (hour >= 14) || (hour < 7) || (hour == 7 && min < 25)){
-      timeShown =  timeShown + "(What Are You Doing Here?)";
+    var timeShown = "Next Rap: ";
+    if (min < 56){
+      timeShown = timeShown + hour + ":" + ((min - (min%3)) + 3);
+    } else {
+      timeShown = timeShown + (hour + 1) + ":00";
     }
     tme.innerHTML = timeShown;
     //first hour (ends @8:12)
