@@ -10,7 +10,7 @@ layout: old
   var tme = document.getElementById('time');
 
   var normalURL = "../images/blacktocat.png";
-  var cleaningURL = "https://www.youtube.com/embed/YumpdV3VNWM?controls=0&amp;showinfo=0;autoplay=1";
+  var cleaningURL = "https://www.youtube.com/embed/YumpdV3VNWM?rel=0;autoplay=1";
 
   var d = new Date();
   var hour = d.getHours();
@@ -61,7 +61,7 @@ layout: old
     if (min % 5 == 0 && !playing){
       playing = true;
       iframe.src = cleaningURL;
-      sleep(1000*60*2).then(() => {
+      sleep(1000*60*3).then(() => {
         iframe.src = normalURL;
         playing = false;
       });
