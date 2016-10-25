@@ -5,7 +5,7 @@ layout: old
 <center><h5 id="time"></h5><center>
 <center><iframe id="ifrm" src="../images/blacktocat.png" width="1280" height="720"></iframe></center>
 <script type="text/javascript">
-  var timer = setInterval(function(){countDownNow()},1000)
+  var timer = setInterval(function(){countDownNow()},250)
   var iframe = document.getElementById('ifrm');
   var tme = document.getElementById('time');
 
@@ -18,7 +18,6 @@ layout: old
   var sec = d.getSeconds();
 
   var timeOffset = 1; //How Early (before Period Ends) to play the song (4 min max)
-  var secsToBurn = 60 * timeOffset * 1000;
 
   var playing = false;
 
@@ -39,7 +38,7 @@ layout: old
     if (min % 3 == 0 && !playing){
       playing = true;
       iframe.src = cleaningURL;
-      sleep(1000*60*3).then(() => {
+      sleep((1000*60*2) + (1000*52)).then(() => {
         iframe.src = normalURL;
         playing = false;
       });
