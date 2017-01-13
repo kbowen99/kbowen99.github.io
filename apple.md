@@ -1,6 +1,6 @@
----
+---
 layout: old
-title: Apples Are Water!
+title: Apples Are Water
 permalink: /apples
 ---
 
