@@ -3,8 +3,29 @@ layout: old
 title: AP Sorting Project
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+<h3>APCS Sorting/Searching Video Project</h3>
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+<h4>Sorting</h4>
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+<p>Selection Sort</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIqN0l6LfPU" frameborder="0" allowfullscreen></iframe>
+
+<p>Insertion Sort</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SPP-a3C0g8k" frameborder="0" allowfullscreen></iframe>
+
+<p>Merge Sort</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4THGyphxwJw" frameborder="0" allowfullscreen></iframe>
+
+<h4>Searching</h4>
+
+<p>Sequential Search</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xwsrj8W_TZQ" frameborder="0" allowfullscreen></iframe>
+
+<p>Binary Search</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AW5vc_9c3us" frameborder="0" allowfullscreen></iframe>
+
+<h3>Forgotten Credits</h3>
+<p> - Jamison Fuel: Credits Inspiration</p>
+<p> - Mrs Hosey: Original Credits Inspiration</p>
+<p> - Google: Being Awesome</p>
+<p> - @DRockMiller: Absolutely nothing</p>
