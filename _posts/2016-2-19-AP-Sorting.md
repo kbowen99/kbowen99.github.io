@@ -1,6 +1,6 @@
 ---
 layout: old
-title: AP Sorting Project
+title: APCS Sorting Project
 ---
 <p>Selection Sort</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIqN0l6LfPU" frameborder="0" allowfullscreen></iframe>
