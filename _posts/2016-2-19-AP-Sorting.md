@@ -2,11 +2,6 @@
 layout: old
 title: AP Sorting Project
 ---
-
-<h3>APCS Sorting/Searching Video Project</h3>
-
-<h4>Sorting</h4>
-
 <p>Selection Sort</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIqN0l6LfPU" frameborder="0" allowfullscreen></iframe>
 
