@@ -1,7 +1,6 @@
 ---
 layout: old
 title: Site Map
-permalink: /map
 ---
 ### Here is a list of all the active pages at this GH-Pages site:
 
